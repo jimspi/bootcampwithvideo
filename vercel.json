@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "src/AIGenieLanding.jsx", "use": "@vercel/static-build" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/src/AIGenieLanding.jsx" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
